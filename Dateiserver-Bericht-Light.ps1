@@ -9,7 +9,7 @@
 
 .DESCRIPTION
     The script operates exclusively in READ-ONLY mode. It changes neither shares nor permissions, files, or settings and
-    transfers no data. It writes exactly one HTML file (and CSV files if requested) to the specified output folder.
+    sends no data to third parties or the internet. It writes exactly one HTML file (and CSV files if requested) to the specified output folder.
 
     Prerequisites: Windows PowerShell 5.1 and an account with read permissions on shares and file system. The evaluation is most accurate when the script runs directly on the file server with administrator rights. With -Server, additional servers can be checked over the network (remote administration via CIM/WinRM, files via administrative shares such as C$).
     Anything the account cannot read appears as "not checked" and never as "OK".
@@ -21,7 +21,7 @@
 
     Deutsch:
     Das Skript arbeitet ausschließlich LESEND. Es ändert weder Freigaben noch Berechtigungen, Dateien oder Einstellungen und
-    überträgt keine Daten. Es schreibt genau eine HTML-Datei (und auf Wunsch CSV-Dateien) in den angegebenen Ausgabeordner.
+    sendet keine Daten an Dritte oder ins Internet. Es schreibt genau eine HTML-Datei (und auf Wunsch CSV-Dateien) in den angegebenen Ausgabeordner.
 
     Voraussetzungen: Windows PowerShell 5.1 und ein Konto mit Leserechten auf Freigaben und Dateisystem. Am genauesten wird die
     Auswertung, wenn das Skript direkt auf dem Dateiserver mit Administratorrechten läuft. Mit -Server können weitere Server
