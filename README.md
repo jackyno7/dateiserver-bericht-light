@@ -1,6 +1,6 @@
 # Dateiserver-Bericht Light – Freigaben und Rechte auf Windows-Dateiservern prüfen
 
-Kostenloses PowerShell-Skript: prüft Freigaben, Dateisystemrechte und Servereinstellungen von Windows-Dateiservern in **6 Punkten** und erzeugt einen übersichtlichen **HTML-Bericht auf Deutsch oder Englisch** (`-Language de|en`, Standard je nach Windows-Sprache). Es arbeitet **ausschließlich lesend**: Es ändert nichts, legt nichts an und überträgt keine Daten.
+Kostenloses PowerShell-Skript: prüft Freigaben, Dateisystemrechte und Servereinstellungen von Windows-Dateiservern in **6 Punkten** und erzeugt einen übersichtlichen **HTML-Bericht auf Deutsch oder Englisch** (`-Language de|en`, Standard je nach Windows-Sprache). Es arbeitet **ausschließlich lesend**: Es ändert nichts, legt keine Objekte an und sendet keine Daten an Dritte oder ins Internet.
 
 ![Beispielbericht](Beispielbericht.png)
 
@@ -25,7 +25,7 @@ Jeder Befund kommt mit Erklärung und Empfehlung.
 powershell -ExecutionPolicy Bypass -File .\Dateiserver-Bericht-Light.ps1
 ```
 
-Alle Optionen zeigt `Get-Help .\Dateiserver-Bericht-Light.ps1 -Detailed`. Voraussetzungen und Rechte stehen im Kopf des Skripts. Getestet mit Windows Server 2019, 2022 und 2025 in Testdomänen (deutsches Windows).
+Alle Optionen zeigt `Get-Help .\Dateiserver-Bericht-Light.ps1 -Detailed`. Voraussetzungen und Rechte stehen im Kopf des Skripts. Getestet mit Windows Server 2025 in Testdomänen (deutsches Windows).
 
 ## Vollversion
 
@@ -100,7 +100,7 @@ Vorlagen und Checklisten (Notfallplan, Backup, Passwortrichtlinie, Onboarding, H
 
 ### English
 
-Free, read-only PowerShell script that checks shares, NTFS permissions and server settings of Windows file servers (6 checks, HTML report in German or English (`-Language de|en`) with findings and recommendations). No changes are made and no data leaves the machine. Run: `powershell -ExecutionPolicy Bypass -File .\Dateiserver-Bericht-Light.ps1`. The full version with 24 checks: https://mueller86.gumroad.com/l/wbbwj
+Free, read-only PowerShell script that checks shares, NTFS permissions and server settings of Windows file servers (6 checks, HTML report in German or English (`-Language de|en`) with findings and recommendations). No changes are made and no data is sent to third parties or the internet; the report stays local. Run: `powershell -ExecutionPolicy Bypass -File .\Dateiserver-Bericht-Light.ps1`. The full version with 24 checks: https://mueller86.gumroad.com/l/wbbwj
 
 <!-- querverweis-en:anfang -->
 #### All scripts and templates
